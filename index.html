@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centros de Datos | Proyecto SENA</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/night.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="orbs-container">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <div class="reveal">
+    <div class="slides">
+      
+      <!-- Diapositiva 1: Portada -->
+      <section class="portada">
+        <div class="glass-container flotar-suave">
+          <h1 class="neon-text">Centros de Datos</h1>
+          <h3>El Corazón de Internet</h3>
+          <p class="subtitle">Infraestructura, Almacenamiento y Redes</p>
+          <div class="luces-servidor">
+            <span class="led mint pulse-fast"></span>
+            <span class="led lavender pulse-slow"></span>
+            <span class="led mint pulse-fast"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diapositiva 2: Interactiva -->
+      <section>
+        <h2 class="neon-title">Hardware en Acción</h2>
+        <p>Secuencia de arranque del clúster principal</p>
+        
+        <div class="servidor-interactivo glass-card flotar" id="servidor-rack">
+          <div class="luces-estado">
+            <span class="led-estado rojo"></span>
+            <span class="led-estado rojo"></span>
+            <span class="led-estado rojo"></span>
+            <span class="led-estado rojo"></span>
+          </div>
+          <button id="btn-encender" class="btn-neo">⚡ INICIAR SECUENCIA</button>
+        </div>
+      </section>
+
+      <!-- Diapositiva 3: Procesamiento -->
+      <section class="scrollable-slide">
+        <h2 class="neon-title">Procesamiento y Red</h2>
+        <div class="grid-layout force-wrap">
+          <div class="card glass-card box-animada">
+            <div class="icon-tech color-mint">🖥️</div>
+            <h4>Servidores Rack / Blade</h4>
+            <p>El cerebro. Gran cantidad de procesadores (CPU/GPU) y memoria RAM concentrados para procesar peticiones masivas en tiempo real.</p>
+          </div>
+          <div class="card glass-card box-animada">
+            <div class="icon-tech color-lavender">🔀</div>
+            <h4>Switches Core & Edge</h4>
+            <p>El sistema nervioso. Enrutan millones de paquetes de datos por segundo a través de complejas redes de fibra óptica.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diapositiva 4: Bases de Datos -->
+      <section class="scrollable-slide">
+        <h2 class="neon-title">Almacenamiento y DBs</h2>
+        <p class="desc-text">¿Dónde vive realmente la información?</p>
+        
+        <div class="card glass-card box-animada full-width">
+          <div class="stacked-responsive">
+            <div class="col-text">
+              <h4 class="color-mint">Arreglos SAN y NAS</h4>
+              <p>Las Bases de Datos (SQL, NoSQL) se guardan en Redes de Área de Almacenamiento (SAN). Son granjas de discos ultrarrápidos (SSD/NVMe) en arreglos RAID para lectura instantánea.</p>
+            </div>
+            <div class="col-list">
+              <ul class="lista-tecnica compacta">
+                <li><strong class="color-lavender">Integridad:</strong> Copias de seguridad redundantes.</li>
+                <li><strong class="color-lavender">Latencia:</strong> Accesos en microsegundos.</li>
+                <li><strong class="color-lavender">Escala:</strong> Se añaden petabytes sin apagar el sistema.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diapositiva 5: Clasificación TIER -->
+      <section class="scrollable-slide">
+        <h2 class="neon-title">Clasificación TIER</h2>
+        <p class="desc-text">Fiabilidad frente a fallos.</p>
+        <div class="grid-layout force-wrap">
+          <div class="card glass-card box-animada tier-card half">
+            <h4 class="color-mint">Tier I & II</h4>
+            <p>Básicos. Componentes simples. Disp: 99.6% (aprox. 28h caída/año).</p>
+          </div>
+          <div class="card glass-card box-animada tier-card half">
+            <h4 class="color-lavender">Tier III</h4>
+            <p>Mantenimiento concurrente. Disp: 99.98% (1.6h caída/año).</p>
+          </div>
+          <div class="card glass-card box-animada tier-card full vip-card">
+            <h4 class="neon-text small-neon">Tier IV (Tolerante a Fallos)</h4>
+            <p>Múltiples sistemas aislados. Si algo explota, no se cae. Disp: 99.995%.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diapositiva 6: Infraestructura Crítica -->
+      <section class="scrollable-slide">
+        <h2 class="neon-title">Infraestructura Crítica (24/7)</h2>
+        <div class="glass-card full-width padding-fix">
+          <ul class="lista-tecnica">
+            <li class="item-animado">
+              <span class="icon-list">❄️</span> 
+              <div><strong>HVAC (Climatización):</strong> Control de temperatura con pasillos fríos/calientes.</div>
+            </li>
+            <li class="item-animado">
+              <span class="icon-list">⚡</span> 
+              <div><strong>UPS y Generadores:</strong> Baterías gigantes y motores diésel de respaldo.</div>
+            </li>
+            <li class="item-animado">
+              <span class="icon-list">🔒</span> 
+              <div><strong>Seguridad NOC:</strong> Monitoreo 24/7 y extinción de incendios por gas (Novec).</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
