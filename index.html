@@ -1,141 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Centros de Datos | Proyecto SENA</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/night.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Center Elite | Proyecto SENA</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/night.css">
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <div class="orbs-container">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-  </div>
-
-  <div class="reveal">
-    <div class="slides">
-      
-      <!-- Diapositiva 1: Portada -->
-      <section class="portada">
-        <div class="glass-container flotar-suave">
-          <h1 class="neon-text">Centros de Datos</h1>
-          <h3>El Corazón de Internet</h3>
-          <p class="subtitle">Infraestructura, Almacenamiento y Redes</p>
-          <div class="luces-servidor">
-            <span class="led mint pulse-fast"></span>
-            <span class="led lavender pulse-slow"></span>
-            <span class="led mint pulse-fast"></span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Diapositiva 2: Interactiva -->
-      <section>
-        <h2 class="neon-title">Hardware en Acción</h2>
-        <p>Secuencia de arranque del clúster principal</p>
-        
-        <div class="servidor-interactivo glass-card flotar" id="servidor-rack">
-          <div class="luces-estado">
-            <span class="led-estado rojo"></span>
-            <span class="led-estado rojo"></span>
-            <span class="led-estado rojo"></span>
-            <span class="led-estado rojo"></span>
-          </div>
-          <button id="btn-encender" class="btn-neo">⚡ INICIAR SECUENCIA</button>
-        </div>
-      </section>
-
-      <!-- Diapositiva 3: Procesamiento -->
-      <section class="scrollable-slide">
-        <h2 class="neon-title">Procesamiento y Red</h2>
-        <div class="grid-layout force-wrap">
-          <div class="card glass-card box-animada">
-            <div class="icon-tech color-mint">🖥️</div>
-            <h4>Servidores Rack / Blade</h4>
-            <p>El cerebro. Gran cantidad de procesadores (CPU/GPU) y memoria RAM concentrados para procesar peticiones masivas en tiempo real.</p>
-          </div>
-          <div class="card glass-card box-animada">
-            <div class="icon-tech color-lavender">🔀</div>
-            <h4>Switches Core & Edge</h4>
-            <p>El sistema nervioso. Enrutan millones de paquetes de datos por segundo a través de complejas redes de fibra óptica.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Diapositiva 4: Bases de Datos -->
-      <section class="scrollable-slide">
-        <h2 class="neon-title">Almacenamiento y DBs</h2>
-        <p class="desc-text">¿Dónde vive realmente la información?</p>
-        
-        <div class="card glass-card box-animada full-width">
-          <div class="stacked-responsive">
-            <div class="col-text">
-              <h4 class="color-mint">Arreglos SAN y NAS</h4>
-              <p>Las Bases de Datos (SQL, NoSQL) se guardan en Redes de Área de Almacenamiento (SAN). Son granjas de discos ultrarrápidos (SSD/NVMe) en arreglos RAID para lectura instantánea.</p>
-            </div>
-            <div class="col-list">
-              <ul class="lista-tecnica compacta">
-                <li><strong class="color-lavender">Integridad:</strong> Copias de seguridad redundantes.</li>
-                <li><strong class="color-lavender">Latencia:</strong> Accesos en microsegundos.</li>
-                <li><strong class="color-lavender">Escala:</strong> Se añaden petabytes sin apagar el sistema.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Diapositiva 5: Clasificación TIER -->
-      <section class="scrollable-slide">
-        <h2 class="neon-title">Clasificación TIER</h2>
-        <p class="desc-text">Fiabilidad frente a fallos.</p>
-        <div class="grid-layout force-wrap">
-          <div class="card glass-card box-animada tier-card half">
-            <h4 class="color-mint">Tier I & II</h4>
-            <p>Básicos. Componentes simples. Disp: 99.6% (aprox. 28h caída/año).</p>
-          </div>
-          <div class="card glass-card box-animada tier-card half">
-            <h4 class="color-lavender">Tier III</h4>
-            <p>Mantenimiento concurrente. Disp: 99.98% (1.6h caída/año).</p>
-          </div>
-          <div class="card glass-card box-animada tier-card full vip-card">
-            <h4 class="neon-text small-neon">Tier IV (Tolerante a Fallos)</h4>
-            <p>Múltiples sistemas aislados. Si algo explota, no se cae. Disp: 99.995%.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Diapositiva 6: Infraestructura Crítica -->
-      <section class="scrollable-slide">
-        <h2 class="neon-title">Infraestructura Crítica (24/7)</h2>
-        <div class="glass-card full-width padding-fix">
-          <ul class="lista-tecnica">
-            <li class="item-animado">
-              <span class="icon-list">❄️</span> 
-              <div><strong>HVAC (Climatización):</strong> Control de temperatura con pasillos fríos/calientes.</div>
-            </li>
-            <li class="item-animado">
-              <span class="icon-list">⚡</span> 
-              <div><strong>UPS y Generadores:</strong> Baterías gigantes y motores diésel de respaldo.</div>
-            </li>
-            <li class="item-animado">
-              <span class="icon-list">🔒</span> 
-              <div><strong>Seguridad NOC:</strong> Monitoreo 24/7 y extinción de incendios por gas (Novec).</div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
+    <div class="bg-grid"></div>
+    <div class="particles">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
     </div>
-  </div>
 
-  <script type="module" src="/src/main.js"></script>
+    <div class="reveal">
+        <div class="slides">
+            
+            <section class="scrollable-slide">
+                <div class="glass-card flotar-suave" style="text-align: center; padding: 60px;">
+                    <h1 class="neon-text">CENTROS DE DATOS</h1>
+                    <h3 style="color: var(--lavender);">El Motor de la Era Digital</h3>
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1000&auto=format&fit=crop" class="img-animated" alt="Pasillo Data Center" style="max-width: 700px;">
+                    <p class="tag-sena">SENA | INFRAESTRUCTURA TÉCNICA</p>
+                </div>
+            </section>
+
+            <section class="scrollable-slide">
+                <h2 class="neon-title">¿Qué es un Data Center?</h2>
+                <div class="flex-container">
+                    <div class="col glass-card">
+                        <p>Es el corazón físico de internet. Una infraestructura diseñada para albergar <strong>servidores, almacenamiento y redes</strong> bajo condiciones extremas de seguridad y control ambiental.</p>
+                        <ul class="lista-tecnica">
+                            <li>Disponibilidad 24/7/365.</li>
+                            <li>Seguridad física y lógica avanzada.</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop" class="img-animated" alt="Servidores Iluminados">
+                    </div>
+                </div>
+            </section>
+
+            <section class="scrollable-slide">
+                <h2 class="neon-title">Arranque de Sistemas</h2>
+                <div class="glass-card" style="text-align: center; margin-bottom: 30px;">
+                    <div class="led-bar">
+                        <span class="led-estado rojo"></span><span class="led-estado rojo"></span><span class="led-estado rojo"></span>
+                    </div>
+                    <button id="btn-encender" class="btn-neo">⚡ INITIALIZE SYSTEM</button>
+                </div>
+                <div class="flex-container">
+                    <div class="col">
+                        <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=1000&auto=format&fit=crop" class="img-animated" alt="Placa base y CPU">
+                    </div>
+                    <div class="col glass-card">
+                        <h4 class="color-mint">Procesamiento CPU</h4>
+                        <p>Los procesadores industriales de alta densidad ejecutan los algoritmos que mueven las aplicaciones globales en fracciones de segundo.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="scrollable-slide">
+                <h2 class="neon-title">Almacenamiento & DBs</h2>
+                <div class="flex-container">
+                    <div class="col glass-card">
+                        <h4 class="color-mint">Redes SAN / NAS</h4>
+                        <p>Las bases de datos no viven en discos simples. Se usan arreglos <strong>SAN</strong> con tecnología de estado sólido para que la información cargue en milisegundos y nunca se pierda.</p>
+                    </div>
+                    <div class="col">
+                        <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=1000&auto=format&fit=crop" class="img-animated" alt="Discos Duros y Almacenamiento">
+                    </div>
+                </div>
+            </section>
+
+            <section class="scrollable-slide">
+                <h2 class="neon-title">Clasificación TIER</h2>
+                <div class="flex-container">
+                    <div class="col glass-card">
+                        <table class="custom-table">
+                            <thead>
+                                <tr><th>Nivel</th><th>Disponibilidad</th><th>Infraestructura</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Tier I</td><td>99.6%</td><td>Básica, sin redundancia.</td></tr>
+                                <tr><td>Tier III</td><td>99.98%</td><td>Mantenimiento concurrente.</td></tr>
+                                <tr class="tier-top"><td>Tier IV</td><td>99.995%</td><td>Tolerancia total a fallas.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop" class="img-animated" alt="Seguridad Cibernética">
+                    </div>
+                </div>
+            </section>
+
+            <section class="scrollable-slide">
+                <h2 class="neon-title">Green Data Centers</h2>
+                <div class="flex-container">
+                    <div class="col">
+                        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1000&auto=format&fit=crop" class="img-animated" alt="Sostenibilidad y Energía Limpia">
+                    </div>
+                    <div class="col glass-card">
+                        <h4 class="color-mint">Sostenibilidad</h4>
+                        <p>Los centros modernos optimizan el <strong>PUE (Power Usage Effectiveness)</strong> mediante el uso de energías renovables, paneles solares y enfriamiento por aire exterior.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="scrollable-slide">
+                <h2 class="neon-title">Virtualización Cloud</h2>
+                <div class="flex-container">
+                    <div class="col glass-card">
+                        <p>Esta tecnología permite que un solo servidor físico ejecute cientos de <strong>máquinas virtuales</strong> al mismo tiempo, reduciendo drásticamente los costos de hardware y el calor en el rack.</p>
+                    </div>
+                    <div class="col">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop" class="img-animated" alt="Red Global Cloud">
+                    </div>
+                </div>
+            </section>
+
+            <section class="scrollable-slide">
+                <div class="glass-card flotar" style="text-align: center; padding: 60px;">
+                    <h1 class="neon-text">FIN DEL PROYECTO</h1>
+                    <h4 class="color-lavender" style="margin-top: 20px;">Infraestructura Crítica SENA</h4>
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1000&auto=format&fit=crop" class="img-animated" alt="Matriz de Red" style="max-width: 500px; margin-top: 30px;">
+                    <p style="margin-top: 30px; font-size: 1.2em;">¿Preguntas sobre el motor de la nube?</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
 </body>
 </html>
